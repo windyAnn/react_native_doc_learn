@@ -5,35 +5,60 @@
  */
 
 import React, { Component } from 'react';
+
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
-    Image
+    TextInput,
+    Image,
+    ScrollView
 } from 'react-native';
 
 class AwesomeProject extends Component {
     render() {
         return (
-            <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}>
-                <View style={{width: 50, height: 50, backgroundColor: 'blue'}} />
-                <View style={{width: 50, height: 50, backgroundColor: 'red'}} />
-                <View style={{width: 50, height: 50, backgroundColor: 'black'}} />
-            </View>
-
+            <ScrollView>
+                <Text style={{fontSize:96}}>Scroll me plz</Text>
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Text style={{fontSize:96}}>If you like</Text>
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Text style={{fontSize:96}}>Scrolling down</Text>
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Text style={{fontSize:96}}>What's the best</Text>
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Text style={{fontSize:96}}>Framework around?</Text>
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Image source={require('./imgs/myicon.png')} />
+                <Text style={{fontSize:80}}>React Native</Text>
+            </ScrollView>
         );
     }
 }
 
 
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -50,6 +75,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+});*/
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
